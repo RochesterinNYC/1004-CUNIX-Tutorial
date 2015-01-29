@@ -1,4 +1,4 @@
-[CUNIX/UNIX Tutorial](http://rochesterinnyc.github.io/1004-CUNIX-Tutorial/)
+[CUNIX/UNIX Tutorial](https://github.com/RochesterinNYC/1004-CUNIX-Tutorial)
 ---
 ####1004 - Intro to Computer Science and Programming in Java 
 -------
