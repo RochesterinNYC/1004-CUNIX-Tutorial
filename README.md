@@ -121,17 +121,17 @@ On successful login and connection to the CUNIX system, you will see something l
     Sun Microsystems Inc.   SunOS 5.9       Generic May 2002
     $
 
-<a name="CUNIX"></a>
+<a name="cunix"></a>
 
 ###CUNIX:
 
 - You are now logged into a CUNIX host that is running on a machine that is owned by Columbia University.
 
-- When you type commands into your shell program and press enter, these commands are sent through the network to the CUNIX host and attempt to execute on that host. The result or errors are sent back through the network to your computer and the shell program displays that result or the errors.
+- When you type commands into your shell program and press enter, these commands are sent through the network (through the ssh connection) to the respective shell program running on the CUNIX host. The remote shell program attempts to execute your command on that host. The result or errors are sent back from the UNIX OS to that remote shell program, then through the network to your computer, and your shell program displays that result or the errors.
 
 - You are at your base directory (jrw2175). If you enter in the following command:
 
-    pwd
+        pwd
 
 You should see the following result:
 
@@ -140,8 +140,6 @@ You should see the following result:
 Example:
 
     /u/4/j/jrw2175
-
-
 
 <a name="commands"></a>
 
@@ -177,7 +175,7 @@ Example:
 
         exit
 
-- Please note that the following directory symbols denote special things:
+Please note that the following directory symbols denote special things:
 
 - '.' is the current directory you're in.
 - '..' is the directory that contains the directory you're currently in.
@@ -247,25 +245,17 @@ Example:
 
 ####System Commands (Extra Stuff):
 
-- Check manual page for a program (ex. javac):
+- Check manual page for a program (ex. javac) (press 'enter' to move down the manual page and 'q' to quit the manual):
 
         man javac
 
-You press 'enter' to move down the manual page and 'q' to quit the manual.
-
-- See memory usage and process information of the system:
+- See memory usage and process information of the system (press 'q' to quit the view):
 
         top
-
-You press 'q' to quit the view.
 
 - See processes running for on the system:
 
         ps -A
-
-Ex.
-
-    shutdown -h now
 
 Some more advanced, interesting, and potentially useful commands/programs to look up or get familiar with:
 
