@@ -13,6 +13,7 @@ This is a tutorial on UNIX and how to use CUNIX, the Columbia system of UNIX hos
 - [Login](#login)
 - [CUNIX](#cunix)
 - [Commands](#commands)
+- [Uploading/Transferring Files](#upload)
 - [Demo](#demo)
 - [Other Notes](#other)
 - [More Resources/Documentation](#docs)
@@ -267,6 +268,36 @@ Some more advanced, interesting, and potentially useful commands/programs to loo
 - Text (chars, words, lines) Counting: wc
 - More Advanced Text Editors: vi/vim, emacs
 - Executing with Admin/Root Privileges: sudo
+
+------
+
+<a name="upload"></a>
+
+###Uploading/Transferring Files:
+
+- There are various software programs that make it easy to transfer and download files from a remote server (like CUNIX) that you have access to.
+
+The following are programs with a GUI (visual interface that will utilize dragging and dropping and etc.):
+
+- <a href="https://cyberduck.io/?l=en">Cyberduck</a>
+- <a href="https://filezilla-project.org/">Filezilla</a>
+- <a href="http://cuit.columbia.edu/winscp">WinSCP</a>
+
+You can also use the <a href="http://www.hypexr.org/linux_scp_help.php">scp</a> command in the following manner:
+
+    scp local_file_path user@remote_host:destination_directory
+
+Example (this will copy the local file Test.java to the HW1 directory on the CUNIX remote host):
+
+    scp ./Test.java pbr1112@cunix.columbia.edu:~/HW1
+
+The '-r' flag can be used to copy over directories instead of single files.
+
+    scp local_directory_path user@remote_host:destination_path
+
+Example (this will copy the local directory HW2 and all its contents to the HW directory on the CUNIX remote host):
+
+    scp -r ./HW2 pbr1112@cunix.columbia.edu:~/HW
 
 ------
 
